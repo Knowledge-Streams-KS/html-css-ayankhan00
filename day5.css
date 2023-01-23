@@ -132,32 +132,44 @@ li {
 
 .work h2 {
     max-width: 640px;
-    margin: auto;
+    /* margin: auto; */
     font-size: 4.2rem;
     color: white;
     border-bottom: 0.2rem solid white;
+    margin: 0 auto 6rem auto;
 }
 
-.work:hover+.code {
+/* .work:hover+.code {
     display: block;
+} */
+
+.grid-link:hover .code {
+    display: block;
+    color: #ff7f50;
 }
 
-.work:hover .code {
-    display: block;
-    color: red;
+.work-title h2 {
+    margin-bottom: 12rem;
 }
 
 .code {
-    width: 1.5rem;
-    font-size: 3rem;
-    margin-top: 0.2rem;
-    display: none;
+    font-size: 2rem;
+    /* display: none; */
+    color: #303841;
+    transition: color 0.3s ease-out;
 }
 
 .work-title {
+    color: white;
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+    margin-top: -0.6rem;
+    background-color: #303841;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
 .project-image {
@@ -177,30 +189,87 @@ li {
     margin-bottom: 6rem;
 }
 
-/* 
-.grid1 {
-    grid-area: grid1;
+.btn-show-all {
+    font-size: 1.25rem;
+    background: #303841;
+    transition: background 0.3s ease-out;
 }
 
-.grid2 {
-    grid-area: grid2;
+.btn-show-all:hover {
+    background-color: #BE3144;
 }
 
-.grid3 {
-    grid-area: grid3;
+.btn {
+    font-size: 2rem;
+    color: white;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
 }
 
-.grid4 {
-    grid-area: grid4;
+/* Section Content here */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    background: #303841;
 }
 
-.grid5 {
-    grid-area: grid5;
+.contact-section-header h2 {
+    color: white;
+    font-size: 6rem;
 }
 
-.grid6 {
-    grid-area: grid6;
-} */
+.contact-section-header p {
+    font-weight: 200;
+    color: white;
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.contact-details {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+    transform: translateY(8px);
+}
+
+footer {
+    color: white;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    background: #303841;
+    border-top: 4px solid #be3144;
+}
+
+footer p {
+    font-size: 1.8rem;
+    margin: 2rem;
+}
+
+a {
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
 
 @media(max-width: 30.625em) {
     .work {
